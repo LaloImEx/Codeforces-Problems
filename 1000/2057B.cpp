@@ -22,7 +22,7 @@ void answ(map<int, int>& M, int k)
     sort(A.begin(), A.end(), cmp); 
    
     for (auto& it : A) { 
-        if(k<=0)break;
+        if(k<=0)break;                
         if(k-it.second>=0){
             ans--;
             k-=it.second;
@@ -46,6 +46,7 @@ int main(){ laloimex
             continue; 
         }
         if(k==n||k+1==n){
+            cin>>n;
             cout<<"1\n";
             continue;
         }
@@ -56,7 +57,7 @@ int main(){ laloimex
                 cin>>aux;
                 nums[aux]++;
             }
-            answ(nums,k);          
+            answ(nums,k);
         }
     }
 }
