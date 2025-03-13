@@ -46,7 +46,7 @@ int main(){ laloimex
             continue; 
         }
         if(k==n||k+1==n){
-            cin>>n;
+            for(int i=0;i<n;i++)cin>>k;
             cout<<"1\n";
             continue;
         }
